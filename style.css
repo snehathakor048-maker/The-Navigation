@@ -91,34 +91,63 @@ footer{
 
 /* NAVBAR DAY 3 */
 
+/* ===== NAVBAR PROFESSIONAL ===== */
+
 .navbar{
     display:flex;
-    justify-content:space-between;
     align-items:center;
-    padding:15px 40px;
+    justify-content:space-between;
+    padding:15px 50px;
     background:var(--primary-color);
 }
 
-.logo h2{
+/* LEFT */
+.nav-left .logo{
     color:white;
+    font-weight:600;
 }
 
-.nav-links{
+/* CENTER */
+.nav-center{
     display:flex;
-    gap:20px;
     list-style:none;
+    gap:30px;
 }
 
-.nav-links a{
+.nav-center a{
     text-decoration:none;
     color:white;
     font-weight:500;
+    position:relative;
 }
 
-.nav-links a:hover{
-    text-decoration:underline;
+/* Hover Underline Animation */
+.nav-center a::after{
+    content:'';
+    position:absolute;
+    width:0%;
+    height:2px;
+    left:0;
+    bottom:-4px;
+    background:white;
+    transition:0.3s;
 }
 
-.nav-links .active{
-    border-bottom:2px solid white;
+.nav-center a:hover::after{
+    width:100%;
+}
+
+/* Active Link */
+.nav-center .active::after{
+    width:100%;
+}
+
+/* RIGHT */
+.nav-right{
+    display:flex;
+}
+
+/* Hire Button Position */
+.nav-btn{
+    padding:8px 20px;
 }
