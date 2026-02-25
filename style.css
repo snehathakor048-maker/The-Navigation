@@ -1,0 +1,33 @@
+/* NAVBAR DAY 3 */
+
+.navbar{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 40px;
+    background:var(--primary-color);
+}
+
+.logo h2{
+    color:white;
+}
+
+.nav-links{
+    display:flex;
+    gap:20px;
+    list-style:none;
+}
+
+.nav-links a{
+    text-decoration:none;
+    color:white;
+    font-weight:500;
+}
+
+.nav-links a:hover{
+    text-decoration:underline;
+}
+
+.nav-links .active{
+    border-bottom:2px solid white;
+}
