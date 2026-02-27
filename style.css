@@ -201,7 +201,39 @@ body.no-scroll{
 overflow:hidden;
 }
 }
-/* Hire Button Position */
+
 .nav-btn{
     padding:8px 20px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:60px 20px;
+}
+
+.search-form{
+margin-top:20px;
+}
+
+.search-box{
+display:flex;
+justify-content:center;
+}
+
+.search-box input{
+padding:10px;
+width:250px;
+border:2px solid #ccc;
+outline:none;
+}
+
+
+.search-box input:focus{
+border-color:var(--primary-color);
+}
+
+.search-box button{
+border-radius:0;
 }
